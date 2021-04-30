@@ -1,0 +1,71 @@
+.courseContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    top: 9vh;
+    left: 13rem;
+}
+
+.courseContent__left {
+    flex: 1;
+    min-height: 91vh;
+    min-width: 45rem;
+    padding: 1.5rem 3rem 3rem 3rem;
+    border-right: 1px solid #ECEDEF;
+    color: #161616;
+}
+
+.courseContent__right {
+    min-width: 27rem;
+    padding: 2.5rem 5rem 3rem 2rem;
+}
+
+/* Left Styles */
+.courseContent__left p {
+    margin-top: 1.5rem;
+    line-height: 1.8rem;
+    font-size: 1.15rem;
+}
+
+.courseContent__left strong {
+    font-weight: 500;
+}
+
+.courseContent__left ul, ol {
+    margin-top: 1.5rem;
+    margin-left: 1.4rem;
+    font-size: 1.15rem;
+    line-height: 1.8rem;
+}
+
+.courseContent__left li {
+    margin-top: 0.8rem;
+}
+
+.courseContent__left .list-container {
+    width: 100%;
+    margin-top: 1.6rem;
+    padding: 0.3rem 1.5rem 2.2rem 1.3rem;
+    background-color: #fbfbfb;
+    border: 1px solid #d4d4d4;
+}
+
+.courseContent__left .list-container > ul,
+.courseContent__left .list-container > ol {
+    margin-top: 0;
+}
+
+.courseContent__left .image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.courseContent img {
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* Right */

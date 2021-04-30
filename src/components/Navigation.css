@@ -1,0 +1,95 @@
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Lesson No */
+.navigation__lessonNo {
+    display: flex;
+    align-items: center;
+    color: #00000080;
+    font-size: 0.9rem;
+    transition: color 100ms ease-in;
+    cursor: pointer;
+}
+
+.navigation__lessonIcon {
+    font-size: 1rem !important;
+}
+
+.navigation__lessonNo:hover {
+    color: black;
+}
+
+/* Lesson Title */
+.navigation__lessonTitle {
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* Lesson Nav */
+.navigation__nav {
+    display: flex;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+
+/* Nav Icons */
+.navigation__navPrev, 
+.navigation__navNext {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 3px 5px;
+    color: #cacaca;
+}
+
+.navigation__navPrev.disabled, 
+.navigation__navNext.disabled {
+    color: #e9e9e9;
+} 
+
+.navigation__navPrev:hover, 
+.navigation__navNext:hover {
+    border: 1px solid #00000080;
+}
+
+.navigation__navPrev.disabled:hover, 
+.navigation__navNext.disabled:hover {
+    border: 1px solid transparent;
+    cursor: default;
+}
+
+.navigation__navIcon {
+    font-size: 1.8rem !important;
+}
+
+/* Nav Periods */
+.navigation__navPeriods {
+    display: flex;
+    align-items: center;
+}
+
+.navigation__navPeriod {
+    height: 0.8rem;
+    width: 2.4rem;
+    margin-right: 1px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.navigation__navPeriod:hover {
+    height: 1.2rem;
+    background-color: #f8f7f7;
+}
+
+.navigation__navPeriod.selected {
+    background-color: #ffc500;
+    cursor: default;
+}
+
+.navigation__navPeriod.selected:hover {
+    height: 0.8rem;
+    background-color: #ffc500;
+}

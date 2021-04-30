@@ -1,0 +1,112 @@
+.radio__label {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 0.3rem 0.8rem 2.5rem;
+    cursor: pointer;
+    color: black;
+    font-size: 1.1rem;
+}
+
+/* On Hover */
+.radio__label:hover {
+    background-color: #f0f0f0;
+}
+
+.radio__label:hover .radio__radio {
+    border: 3px solid #333;
+    opacity: 0.6;
+}
+
+.radio__label:hover .radio__radio:after {
+    display: block;
+    background-color: #333;
+}
+
+/* On Check */
+.radio__input:checked + .radio__radio {
+    border: 3px solid #333;
+}
+
+.radio__input:checked + .radio__radio:after {
+    display: block;
+}
+
+/* Hover on Checked */
+.radio__label:hover .radio__input:checked + .radio__radio {
+    border: 3px solid #333;
+    opacity: 1 !important;
+}
+
+.radio__label:hover .radio__input:checked + .radio__radio:after {
+    display: block;
+    background-color: #333;
+}
+
+/* Actual radio button */
+.radio__input {
+    display: none;
+}
+
+/* Custom radio Button */
+.radio__radio {
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-right: 1rem;
+    padding: 2px;
+    background-color: #f7f7f7;
+    border: 2px solid #777;
+    border-radius: 50%;
+}
+
+.radio__radio:after {
+    content: "";
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+/* Submission Buttons */
+.radio__button {
+    display: block;
+    margin: 1rem 0 0 2.5rem;
+    width: 15rem;
+    padding: 0.6rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.radio__answerButton {
+    background-color: #000;
+    color: white;
+    border: 1px solid black;
+    transition: opacity 100ms ease-in;
+}
+
+.radio__answerButton.disabled {
+    opacity: 0.2;
+    cursor: default;
+}
+
+.radio__answerButton:hover {
+    opacity: 0.8;
+}
+
+.radio__answerButton.disabled:hover {
+    opacity: 0.2;
+}
+
+.radio__showButton {
+    background-color: white;
+    color: #00000083;
+    border: 1px solid #7a7a7a83;
+    transition: all 200ms ease-in;
+}
+
+.radio__showButton:hover {
+    color: #333;
+    border: 1px solid #333;
+}

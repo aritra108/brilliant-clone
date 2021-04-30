@@ -1,0 +1,146 @@
+.overview {
+    width: 100%;
+    padding: 3rem 5rem;
+    margin-top: 9vh;
+    margin-bottom: 4rem;
+    background-color: var(--light-gray);
+}
+
+/* Overview Back Text */
+.overview__back {
+    display: flex;
+    align-items: center;
+    color: rgb(141, 141, 141);
+}
+
+.overview__backIcon {
+    font-size: 0.8rem !important;
+    margin-right: 2px;
+}
+
+.overview__back:hover {
+    color: #000000;
+}
+
+/* Overview Content */
+.overview__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+/* Overview Left */
+.overview__left {
+    padding: 1rem 3rem 0 0;
+    width: 44rem;
+}
+
+.overview__left > h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.overview__left > h3 {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+
+.overview__left > p {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #00000080;
+}
+
+.overview__left > p > a {
+    display: block;
+    text-decoration: underline;
+}
+
+.overview__left > p > a:hover {
+    color: #000000;
+}
+
+.overview__left > a {
+    display: block;
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    text-decoration: underline;
+    color: rgb(141, 141, 141);
+}
+
+.overview__left > a:hover {
+    color: #000000;
+}
+
+/* Overview Right */
+.overview__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 2.2rem;
+    width: 100%;
+    max-width: 29rem;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.14);
+}
+
+.overview__rightStats {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.overview__rightStat {
+    width: 12rem;
+}
+
+.overview__rightStat > h4 {
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.overview__rightStat > p {
+    margin-top: 0.4rem;
+    color: rgb(141, 141, 141);
+}
+
+.overview__right > button {
+    margin-top: 2rem !important;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 50ms ease-in;
+}
+
+.overview__right > button:hover {
+    background-color: #2b2b2b;
+}
+
+@media(max-width: 1125px) {
+    .overview__rightStat {
+        width: 10rem;
+    }
+}
+
+@media(max-width: 1000px) {
+    .overview__left {
+        width: 15rem;
+        padding: 1rem 0rem 0 0;
+    }
+
+    .overview__right {
+        width: 100%;
+    }
+}

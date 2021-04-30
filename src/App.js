@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import "./App.css";
+import Header from "./components/Header";
+import PracticeLogic from "./pages/practice_logic";
+import Puzzles from "./pages/puzzles";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="app">
+        <Header />
+        <Switch>
+          <Route exact path="/practice-logic" component={PracticeLogic} />
+          <Route exact path="/puzzles" component={Puzzles} />
+          <Redirect to="/practice-logic" />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 

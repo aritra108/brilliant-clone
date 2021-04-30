@@ -1,0 +1,26 @@
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.sectionHeader__index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1.5rem;
+    border-radius: 50%;
+    background-color: rgb(221, 226, 255);;
+    color: rgb(117, 139, 255);
+}
+
+.sectionHeader__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.sectionHeader__excerpt {
+    color: #00000080;
+}

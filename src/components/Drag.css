@@ -1,0 +1,162 @@
+.drag {
+    width: 100%;
+}
+
+/* Instruction */
+.drag__instruction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drag__instructionText {
+    font-size: 1rem !important;
+    font-weight: 500;
+    color: #333;
+}
+
+.drag__instructionReset {
+    display: flex;
+    align-items: center;
+    font-size: 1rem !important;
+    color: lightgray;
+}
+
+/* Final Boxes */
+.drag__finalBoxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.drag__finalBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 11.5rem;
+    width: 100%;
+    max-width: 9.5rem;
+    margin: 0 1rem;
+    border: 2px dashed rgb(187, 187, 187);
+    border-radius: 10px;
+    color: rgb(187, 187, 187);
+    transition: border 300ms ease-in;
+}
+
+.drag__finalBox > p {
+    margin-top: 0;
+    font-size: 0.98rem;
+}
+
+.drag__finalBox:hover {
+    border: 2px dashed var(--blue);
+}
+
+.drag__finalBox.dashed-border {
+    border: 2px dashed var(--blue);
+}
+
+.drag__finalBox.solid-border {
+    border: 2px solid var(--blue);
+}
+
+/* Initial Boxes */
+.drag__initialBoxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.6rem;
+}
+
+.drag__initialBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 9.5rem;
+    margin: 0 1rem;
+}
+
+/* Drag Image */
+.drag__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    cursor: grab;
+}
+
+.drag__image > p {
+    margin-top: 0;
+    font-size: 0.93rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.drag__image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.drag__image.hide-image {
+    display: none;
+}
+
+.drag__image.grabbing {
+    cursor: grabbing;
+}
+
+/* Submission Buttons */
+.drag__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.drag__button {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.drag__answerButton {
+    background-color: #000;
+    color: white;
+    border: 1px solid black;
+    transition: opacity 100ms ease-in;
+}
+
+.drag__answerButton.disabled {
+    opacity: 0.2;
+    cursor: default;
+}
+
+.drag__answerButton:hover {
+    opacity: 0.8;
+}
+
+.drag__answerButton.disabled:hover {
+    opacity: 0.2;
+}
+
+.drag__showButton {
+    margin-right: 1rem;
+    background-color: white;
+    color: #00000083;
+    border: 1px solid #7a7a7a83;
+    transition: all 200ms ease-in;
+}
+
+.drag__showButton:hover {
+    color: #333;
+    border: 1px solid #333;
+}
