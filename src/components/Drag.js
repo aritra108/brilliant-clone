@@ -85,9 +85,19 @@ const Drag = ({ initialBoxes, finalBoxes }) => {
     const initialBox = e.target;
 
     // Get the ID of the drag image and append it to initial box
-    const data = e.dataTransfer.getData("text");
-    const dragImage = document.getElementById(data);
-    initialBox.appendChild(dragImage);
+    const dragId = e.dataTransfer.getData("text");
+    const dragImage = document.getElementById(dragId);
+
+    // Match the ID of the drag image with that of the initial box
+    const initialBoxNo = initialBox.id.substr(-1);
+    const dragNo = dragId.substr(-1);
+
+    if (initialBoxNo === dragNo) {
+      initialBox.appendChild(dragImage);
+    } else {
+      const rightInitialBox = document.getElementById("initial-box-" + dragNo);
+      rightInitialBox.appendChild(dragImage);
+    }
   };
 
   /**** Drag Functions on Final Box ****/
